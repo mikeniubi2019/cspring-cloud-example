@@ -1,0 +1,23 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: eureka-server
+  profiles: profile1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka
+
+---
+
+server:
+  port: 8071
+spring:
+  application:
+    name: eureka-server
+  profiles: profile2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka

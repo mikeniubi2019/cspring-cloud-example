@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: rabbit-provid
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka,http://localhost:8070/eureka
+management:
+  security:
+    enable: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
