@@ -1,0 +1,30 @@
+zuul:
+  routes:
+    consumer:
+      path: /consumer/**
+      serviceId: consumer
+    provid:
+      path: /provid/**
+      serviceId: provid
+    rabbit-consumer:
+      path: /rabbitConsumer/**
+      serviceId: rabbit-consumer
+    rabbit-provid:
+      path: /rabbitProvid/**
+      serviceId: rabbit-provid
+    te:
+      path: /te/**
+      url: http://www.baidu.com
+spring:
+  sleuth:
+    sampler:
+      probability: 0.1
+  zipkin:
+    sender:
+      type: rabbit
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+name : zuul

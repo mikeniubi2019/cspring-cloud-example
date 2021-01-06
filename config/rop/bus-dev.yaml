@@ -1,0 +1,10 @@
+spring:
+  sleuth:
+    sampler:
+      probability: 0.1
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+name : bus

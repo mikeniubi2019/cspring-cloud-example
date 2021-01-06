@@ -1,0 +1,25 @@
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        requestVolumeThreshould: 5
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3500
+spring:
+  sleuth:
+    sampler:
+      probability: 0.1
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    sender:
+      type: rabbit
+name : consumerhuyvtycfrdru

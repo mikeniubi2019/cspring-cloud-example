@@ -13,11 +13,11 @@ spring:
       server:
         git:
           # 仓库地址
-          uri: https://github.com/mikeniubi2019/cspring-cloud-example
+          uri: https://github.com/mikeniubi2019/mGossip
           # 对应 {label} 部分，即 Git 的分支
           label: master
           # 仓库文件夹名称，多个以逗号分隔
-          search-paths: src/config
+          search-paths: config
           # git 仓库用户名（公开库可以不用填写）
           username:
           # git 仓库密码（公开库可以不用填写）

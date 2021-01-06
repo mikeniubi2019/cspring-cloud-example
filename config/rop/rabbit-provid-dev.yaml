@@ -1,0 +1,15 @@
+spring:
+  sleuth:
+    sampler:
+      probability: 0.1
+  application:
+    name: rabbit-provid
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    sender:
+      type: rabbit
+name : rabbit-provid-dev
